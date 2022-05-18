@@ -151,13 +151,6 @@ const listFoods = (recipe) => {
   return result;
 };
 
-// recipe.ingredients.map(value => {
-//   let curr = value.split(' ');
-//   return curr.filter(word => {
-
-//   })
-// });
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 7 - Stretch Goal
 
