@@ -143,8 +143,8 @@ hasChildrenValues(characters, 'Sansa') will return false
 ------------------------------------------------------------------------------------------------ */
 
 const hasChildrenValues = (arr, characterName) => {
-  let character = arr.find(characterObj => characterObj.name === characterName);
-  return character.hasOwnProperty('children');
+  let characterObj = arr.find(character => character.name === characterName);
+  return characterObj.hasOwnProperty('children');
 };
 
 /* ------------------------------------------------------------------------------------------------
