@@ -7,15 +7,15 @@ Write a function named longestString that takes in an array of strings and retur
 ------------------------------------------------------------------------------------------------ */
 
 const longestString = (arr) => {
-  let longStrIndex = -1;
+  let longStrIdx = -1;
   let longStrLength = 0;
   arr.forEach((word, idx) => {
     if(word.length > longStrLength) {
       longStrLength = word.length;
-      longStrIndex = idx;
+      longStrIdx = idx;
     }
   });
-  return longStrIndex;
+  return longStrIdx;
 };
 
 /* ------------------------------------------------------------------------------------------------
