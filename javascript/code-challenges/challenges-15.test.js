@@ -174,24 +174,17 @@ Here is a sample board:
 ------------------------------------------------------------------------------------------------ */
 
 const detectTicTacToeWin = (board) => {
-  console.log(board);
-  for(let row = 0; row < 3; row++) {
-    console.log('Row', row);
-    if(threeInARow(board, row, 0, row, 1, row, 2)) {
+  for(let i = 0; i < 3; i++) {
+    if(threeInARow(board, i, 0, i, 1, i, 2)) {
+      return true;
+    }
+    if(threeInARow(board, 0, i, 1, i, 2, i)) {
       return true;
     }
   }
-  for(let col = 0; col < board.length; col++) {
-    console.log('column', col);
-    if(threeInARow(board, 0, col, 1, col, 2, col)) {
-      return true;
-    }
-  }
-  console.log('daigonal 1');
   if(threeInARow(board, 0,0,1,1,2,2)) {
     return true;
   }
-  console.log('daigonal 2');
   if(threeInARow(board, 2,2,1,1,0,0)) {
     return true;
   }
