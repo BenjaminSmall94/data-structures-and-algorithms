@@ -9,6 +9,43 @@ class LinkedList:
     def insert(self, value):
         self.head = Node(value, self.head)
 
+    def append(self, val):
+        if self.head is None:
+            self.head = Node(val)
+        else:
+            curr = self.head
+            while curr.next is not None:
+                curr = curr.next
+            curr.next = Node(val)
+
+    def insert_before(self, val, new_val):
+        if self.head is None:
+            raise TargetError
+        elif self.head.value == val:
+            temp = self.head
+            self.head = Node(new_val, temp)
+        else:
+            curr = self.head
+            while curr.next is not None:
+                if curr.next.value == val:
+                    curr.next = Node(new_val, curr.next)
+                    break
+                else:
+                    curr = curr.next
+            else:
+                raise TargetError
+
+    def insert_after(self, val, new_val):
+        curr = self.head
+        while curr is not None:
+            if curr.value == val:
+                curr.next = Node(new_val, curr.next)
+                break
+            else:
+                curr = curr.next
+        else:
+            raise TargetError
+
     def includes(self, value):
         curr = self.head
         while curr is not None:
@@ -33,6 +70,7 @@ class LinkedList:
         output += "NULL"
         return output
 
+
 class Node:
     """
 
@@ -41,5 +79,6 @@ class Node:
         self.value = value
         self.next = next_node
 
-class TargetError:
+
+class TargetError(Exception):
     pass
