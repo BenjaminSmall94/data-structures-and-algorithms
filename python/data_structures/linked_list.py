@@ -1,6 +1,7 @@
 class LinkedList:
     """
-    Put docstring here
+    Defines class implementation of a linked list data structure with methods for prepending, appending, and inserting
+    before and after a specified value
     """
 
     def __init__(self, head=None):
@@ -73,7 +74,7 @@ class LinkedList:
 
 class Node:
     """
-
+    Defines a class that behaves as the node for singly linked list
     """
     def __init__(self, value, next_node=None):
         self.value = value
