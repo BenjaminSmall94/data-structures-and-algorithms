@@ -26,3 +26,4 @@ Table of Contents
 2. [Array Insert Shift](python/array_insert_shift/README.md)
 3. [Array Binary Search](python/array-binary-search/README.md)
 4. [Build a Linked LIst](python/docs/linked_list/README.md)
+5. [Linked List Insertions](python/docs/linked_list_insertions/README.md)
