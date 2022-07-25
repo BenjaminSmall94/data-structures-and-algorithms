@@ -1,6 +1,8 @@
 # Linked List Insertions
 Add functionality to your code through various additional functions.
 
+[Linked List implementation](../../data_structures/linked_list.py)
+
 ## Challenge
 This Code Challenge 4 required that I add the following methods to my code:
 
