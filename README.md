@@ -27,3 +27,4 @@ Table of Contents
 3. [Array Binary Search](python/array-binary-search/README.md)
 4. [Build a Linked LIst](python/docs/linked_list/README.md)
 5. [Linked List Insertions](python/docs/linked_list_insertions/README.md)
+6. [Kth Item from End of Linked List](python/docs/linked_list_kth/README.md)
