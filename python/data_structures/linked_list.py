@@ -47,6 +47,12 @@ class LinkedList:
         else:
             raise TargetError
 
+    def kth_from_end(self, k):
+        arr = self.to_list()
+        if len(arr) <= k or k < 0:
+            raise TargetError
+        return arr[len(arr) - 1 - k]
+
     def includes(self, value):
         curr = self.head
         while curr is not None:
