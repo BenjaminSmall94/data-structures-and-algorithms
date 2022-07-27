@@ -10,6 +10,15 @@ class LinkedList:
     def insert(self, value):
         self.head = Node(value, self.head)
 
+    def pop(self):
+        if self.head is not None:
+            first_item = self.head
+            self.head = self.head.next
+            first_item.next = None
+            return first_item
+        else:
+            return False
+
     def append(self, val):
         if self.head is None:
             self.head = Node(val)
