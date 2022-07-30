@@ -62,6 +62,15 @@ class LinkedList:
             raise TargetError
         return arr[len(arr) - 1 - k]
 
+    def sum_odd(self):
+        curr = self.head
+        odd_sum = 0
+        while curr is not None:
+            if curr.value % 2 == 1:
+                odd_sum += curr.value
+            curr = curr.next
+        return odd_sum
+
     def includes(self, value):
         curr = self.head
         while curr is not None:

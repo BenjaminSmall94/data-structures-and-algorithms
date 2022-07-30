@@ -75,3 +75,11 @@ def test_to_list():
     linked_list.insert("banana")
 
     assert linked_list.to_list() == ["banana", "apple"]
+
+def test_sum_odd():
+    linked_list = LinkedList()
+
+    for num in range(10):
+        linked_list.insert(num)
+
+    assert linked_list.sum_odd() == 25
