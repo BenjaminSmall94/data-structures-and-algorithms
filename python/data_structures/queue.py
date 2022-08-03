@@ -1,6 +1,7 @@
 from data_structures.linked_list import Node
 from data_structures.invalid_operation_error import InvalidOperationError
 
+
 class Queue:
     """
     Put docstring here
@@ -40,3 +41,13 @@ class Queue:
     def is_empty(self):
         return self.front is None
         pass
+
+    def __str__(self):
+        temp = Queue()
+        string_rep = "Front -> "
+        while not self.is_empty():
+            curr = self.dequeue()
+            string_rep += f"{curr} -> "
+            temp.enqueue(curr)
+        self = temp
+        return string_rep
