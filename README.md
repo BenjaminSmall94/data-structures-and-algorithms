@@ -32,3 +32,4 @@ Table of Contents
 8. [Stacks and Queues](python/docs/stack_and_queue/README.md)
 9. [Pseudo Queue](python/docs/stack_queue_pseudo/README.md)
 10. [Animal Shelter](python/docs/stack_queue_animal_shelter/README.md)
+11. [Stack Queue Brackets](python/docs/stack_queue_brackets/README.md)
