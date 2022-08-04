@@ -12,3 +12,5 @@ I used the iterative method  walk through every element in the input linked list
 
 - **Time** -> O(1) for all operations because only constant time is needed for all common stack and queue methods.
 - **Space** -> O(1) additional space is required for all operations of adding or removing single nodes.
+
+![Linked List Whiteboard](White%20Board.png)

@@ -22,3 +22,5 @@ Enqueue
 Dequeue
 - **Time** -> O(n) worst case since the queue will have to be iterated through to remove a middle indexed item and them reconstruct the queue.
 - **Space** -> O(0) because no new data is created with this operation.
+
+![Linked List Whiteboard](White%20Board.png)
