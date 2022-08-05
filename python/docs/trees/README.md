@@ -1,6 +1,9 @@
 # Trees
 Trees are very similar to a linked list however they have more than one next node.
 
+[Binary Tree](../../data_structures/binary_tree.py)
+[Binary Search Tree](../../data_structures/binary_search_tree.py)
+
 ## Challenge
 This Code Challenge 15 required that I design my own tree and binary search tree class with `pre-order`, `in-order`, and `post-order` traversal methods for the tree and `add` and `contains` method for the binary search tree.
 
