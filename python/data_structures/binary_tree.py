@@ -5,7 +5,6 @@ class BinaryTree:
 
     def __init__(self):
         self.root = None
-        pass
 
     def pre_order(self):
         def _pre_order(tree_node, tree_vals):
