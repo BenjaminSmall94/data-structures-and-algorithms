@@ -33,3 +33,4 @@ Table of Contents
 9. [Pseudo Queue](python/docs/stack_queue_pseudo/README.md)
 10. [Animal Shelter](python/docs/stack_queue_animal_shelter/README.md)
 11. [Stack Queue Brackets](python/docs/stack_queue_brackets/README.md)
+12. [Trees](python/docs/trees/README.md)
