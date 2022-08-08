@@ -45,7 +45,6 @@ class BinaryTree:
             _post_order(self.root, tree_vals)
         return tree_vals
 
-
 class Node:
 
     def __init__(self, value):
