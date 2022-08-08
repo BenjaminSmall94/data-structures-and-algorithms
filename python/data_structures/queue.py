@@ -47,7 +47,8 @@ class Queue:
         string_rep = "Front -> "
         while not self.is_empty():
             curr = self.dequeue()
-            string_rep += f"{curr} -> "
+            string_rep += f"{curr.value} -> "
             temp.enqueue(curr)
-        self = temp
+        self.front = temp.front
+        self.rear = temp.rear
         return string_rep
