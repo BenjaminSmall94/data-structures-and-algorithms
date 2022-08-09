@@ -35,3 +35,4 @@ Table of Contents
 11. [Stack Queue Brackets](python/docs/stack_queue_brackets/README.md)
 12. [Trees](python/docs/trees/README.md)
 13. [Trees Breadth First](python/docs/tree_breadth_first/README.md)
+14. [Tree Max](python/docs/trees/README.md)
