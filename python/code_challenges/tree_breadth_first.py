@@ -9,7 +9,6 @@ def breadth_first(tree):
         return tree_list
     if tree.root is not None:
         search_queue.enqueue(tree.root)
-    i = 1
     while not search_queue.is_empty():
         curr = search_queue.dequeue()
         tree_list.append(curr.value)
@@ -17,5 +16,4 @@ def breadth_first(tree):
             search_queue.enqueue(curr.left)
         if curr.right is not None:
             search_queue.enqueue(curr.right)
-        i += 1
     return tree_list
