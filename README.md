@@ -36,3 +36,4 @@ Table of Contents
 12. [Trees](python/docs/trees/README.md)
 13. [Trees Breadth First](python/docs/tree_breadth_first/README.md)
 14. [Tree Max](python/docs/trees/README.md)
+15. [Tree Fizz Buzz](python/docs/tree_fizz_buzz/README.md)
