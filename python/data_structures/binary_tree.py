@@ -1,4 +1,4 @@
-from queue import Queue
+from data_structures.queue import Queue
 
 
 class BinaryTree:
