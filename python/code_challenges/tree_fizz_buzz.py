@@ -26,10 +26,11 @@ def fizz_buzz_tree(tree):
                 fizz_curr.value = "Fizz"
             else:
                 fizz_curr.value = str(curr.value)
-            for idx, child in enumerate(curr.children):
+            for child in curr.children:
                 tree_queue.enqueue(child)
-                fizz_curr.children.append(Node())
-                fizz_tree_queue.enqueue(fizz_curr.children[idx])
+                fizz_node = Node()
+                fizz_curr.children.append(fizz_node)
+                fizz_tree_queue.enqueue(fizz_node)
         return fizz_tree
 
 
