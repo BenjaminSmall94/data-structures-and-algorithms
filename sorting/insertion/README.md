@@ -4,6 +4,8 @@
 
 Insertion sort is a sorting algorithm that traverses the array left to right and then for each traversal takes the value at the current index and swaps items moving left until the right item is no longer smaller than the left item in the comparison.
 
+[Insertion Sort](../../python/code_challenges/insertion_sort.py)
+
 ### Pseudocode
 
 ![Insertion Sort Pseudo Code](insertion_pseudocode.png)
