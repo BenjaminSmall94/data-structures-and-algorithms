@@ -38,3 +38,4 @@ Table of Contents
 14. [Tree Max](python/docs/trees/README.md)
 15. [Tree Fizz Buzz](python/docs/tree_fizz_buzz/README.md)
 16. [Insertion Sort](sorting/insertion/README.md)
+17. [Merge Sort](sorting/merge/README.md)
