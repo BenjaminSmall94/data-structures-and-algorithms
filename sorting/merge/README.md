@@ -2,7 +2,7 @@
 
 ## Merge Sort
 
-Insertion sort is a sorting algorithm that employs to the divide and conquer method exploit the fact that sorting small lists and then merging these presorted lists runs drastically faster than sorting large amounts of random data at the same time.
+Merge sort is a sorting algorithm that employs to the divide and conquer method exploit the fact that sorting small lists and then merging these presorted lists runs drastically faster than sorting large amounts of random data at the same time.
 
 [Insertion Sort](../../python/code_challenges/merge_sort.py)
 
