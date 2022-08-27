@@ -6,7 +6,6 @@ def test_exists():
     assert Hashtable
 
 
-@pytest.mark.skip("TODO")
 def test_get_apple():
     hashtable = Hashtable()
     hashtable.set("apple", "Used for apple sauce")
@@ -15,20 +14,25 @@ def test_get_apple():
     assert actual == expected
 
 
-@pytest.mark.skip("TODO")
-def test_internals():
-    hashtable = Hashtable(1024)
-    hashtable.set("ahmad", 30)
-    hashtable.set("silent", True)
-    hashtable.set("listen", "to me")
-
-    actual = []
-
-    # NOTE: purposely breaking encapsulation to test the "internals" of Hashmap
-    for item in hashtable._buckets:
-        if item:
-            actual.append(item.display())
-
-    expected = [[["silent", True], ["listen", "to me"]], [["ahmad", 30]]]
-
+def test_bad_key():
+    hashtable = Hashtable()
+    actual = hashtable.get("apple")
+    expected = None
     assert actual == expected
+
+
+def test_get_keys():
+    hashtable = Hashtable()
+    hashtable.set("apple", "Used for apple sauce")
+    hashtable.set("orange", "Used for orange sauce")
+    hashtable.set("grape", "Used for grape sauce")
+    actual = sorted(hashtable.keys())
+    expected = ["apple", "grape", "orange"]
+    assert actual == expected
+
+
+def test_collisions():
+    hashtable = Hashtable()
+    hashtable.set("apple", "Used for apple sauce")
+    hashtable.set("orange", "Used for orange sauce")
+    assert True
