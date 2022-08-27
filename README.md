@@ -40,3 +40,4 @@ Table of Contents
 16. [Insertion Sort](sorting/insertion/README.md)
 17. [Merge Sort](sorting/merge/README.md)
 18. [Quick Sort](sorting/quick/README.md)
+19. [Hash Table](python/docs/hashtable/README.md)
