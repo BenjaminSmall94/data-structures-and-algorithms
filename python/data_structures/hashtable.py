@@ -13,7 +13,20 @@ class Hashtable:
         hashcode = self.hash(key)
         if self.buckets[hashcode] is None:
             self.buckets[hashcode] = LinkedList()
-        self.buckets[hashcode].insert((key, value))
+        bucket = self.buckets[hashcode]
+        if bucket.head is not None:
+            if bucket.head.value[0] == key:
+                bucket.head = bucket.head.next
+            else:
+                prev = bucket.head
+                drop = bucket.head.next
+                while drop is not None:
+                    if drop.value[0] == key:
+                        prev.next = drop
+                        break
+                    prev = drop
+                    drop = drop.next
+        bucket.insert((key, value))
 
     def get(self, key):
         hashcode = self.hash(key)

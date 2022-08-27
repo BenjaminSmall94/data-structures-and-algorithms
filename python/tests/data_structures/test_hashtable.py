@@ -34,5 +34,17 @@ def test_get_keys():
 def test_collisions():
     hashtable = Hashtable()
     hashtable.set("apple", "Used for apple sauce")
-    hashtable.set("orange", "Used for orange sauce")
-    assert True
+    hashtable.set("apple", "Overriding")
+    actual = hashtable.get("apple")
+    expected = "Overriding"
+    assert actual == expected
+
+
+def test_hash_range():
+    hashtable = Hashtable(8)
+    sample_keys = [chr(num) for num in range(256)]
+    for key in sample_keys:
+        hashcode = hashtable.hash(key)
+        if not 0 < hashcode < 7:
+            return False
+    return True
