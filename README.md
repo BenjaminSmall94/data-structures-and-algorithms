@@ -41,3 +41,4 @@ Table of Contents
 17. [Merge Sort](sorting/merge/README.md)
 18. [Quick Sort](sorting/quick/README.md)
 19. [Hash Table](python/docs/hashtable/README.md)
+20. [Hash Table Repeated Word](python/docs/hashtable_repeated_word/README.md)
