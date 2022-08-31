@@ -63,9 +63,12 @@ class Hashtable:
                     drop = drop.next
         return keys
 
-    def hash(self, string):
+    def hash(self, key):
         total = 0
-        for char in string:
-            total += ord(char)
+        if isinstance(key, int):
+            total = key
+        else:
+            for char in key:
+                total += ord(char)
         pre_mod_hash = total * 599
         return pre_mod_hash % self.size
