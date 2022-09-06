@@ -23,7 +23,7 @@ class Hashtable:
                 drop = bucket.head.next
                 while drop is not None:
                     if drop.value[0] == key:
-                        prev.next = drop
+                        prev.next = drop.next
                         break
                     prev = drop
                     drop = drop.next
