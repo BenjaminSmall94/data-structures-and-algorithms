@@ -43,3 +43,5 @@ Table of Contents
 19. [Hash Table](python/docs/hashtable/README.md)
 20. [Hash Table Repeated Word](python/docs/hashtable_repeated_word/README.md)
 21. [Hash Table Left Join](python/docs/hashtable_left_join/README.md)
+22. [Graph](python/docs/graphs/README.md)
+23. [Graph Breadth First](python/docs/graph_breadth_first/README.md)

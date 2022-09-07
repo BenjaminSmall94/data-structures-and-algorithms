@@ -89,6 +89,3 @@ class Node:
         self.value = value
         self.left = None
         self.right = None
-
-if __name__ == "__main__":
-    print("hi")
