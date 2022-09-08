@@ -45,3 +45,4 @@ Table of Contents
 21. [Hash Table Left Join](python/docs/hashtable_left_join/README.md)
 22. [Graph](python/docs/graphs/README.md)
 23. [Graph Breadth First](python/docs/graph_breadth_first/README.md)
+24. [Graph Business Trip](python/docs/graph_business_trip/README.md)
