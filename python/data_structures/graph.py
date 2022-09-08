@@ -27,11 +27,20 @@ class Graph:
         else:
             raise KeyError
 
+    def get_node(self, name):
+        for vertex in self.adjacency_list.keys():
+            if vertex.value == name:
+                return vertex
+        raise KeyError
+
     def get_nodes(self):
         return self.adjacency_list.keys()
 
     def size(self):
         return self.num
+
+    def contains(self, name):
+        return name in [vertex.value for vertex in self.adjacency_list.keys()]
 
     def breadth_first(self, root):
         breadth = Queue()
