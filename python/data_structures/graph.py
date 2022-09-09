@@ -58,6 +58,21 @@ class Graph:
                     breadth.enqueue(neighbor.vertex)
         return node_list
 
+    def depth_first_search(self, root):
+        def search_node(curr_node):
+            node_list.append(curr_node.value)
+            visited_nodes.add(curr_node)
+            for neighbor_edge in self.get_neighbors(curr_node):
+                if neighbor_edge.vertex not in visited_nodes:
+                    search_node(neighbor_edge.vertex)
+            return node_list
+
+        if root not in self.adjacency_list:
+            return []
+        node_list = []
+        visited_nodes = set()
+        return search_node(root)
+
 
 class Vertex:
 
